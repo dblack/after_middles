@@ -27,5 +27,6 @@ The after_middle method is a wrapper around before_filter. It adds the
 class you give it to an array, and then before the response is sent, the
 array is turned into a middleware stack which is processed. 
 
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+Copyright (c) 2009 Ruby Power and Light, LLC. Released under the same terms
+as Ruby itself. 
 
