@@ -1,0 +1,31 @@
+AfterMiddles
+============
+
+This is an experimental plugin to add a Rack-based after-filter-like layer
+to ActionController. 
+
+Example
+=======
+
+You get an initialize method for free (@app = app).
+
+  class MyRackApp
+    def call(env)
+      status, headers, response = @app.call(env)
+      [status, headers, response]
+    end
+  end
+
+  class ItemsController
+    after_middle MyRackApp
+  end
+
+More information
+================
+
+The after_middle method is a wrapper around before_filter. It adds the
+class you give it to an array, and then before the response is sent, the
+array is turned into a middleware stack which is processed. 
+
+Copyright (c) 2009 [name of plugin creator], released under the MIT license
+
