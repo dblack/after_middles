@@ -2,7 +2,12 @@ AfterMiddles
 ============
 
 This is an experimental plugin to add a Rack-based after-filter-like layer
-to ActionController. 
+to ActionController. It requires Rails 2.3/edge. 
+
+I've got the tests working as integration tests in an app on my machine.
+They're a bit temperamental about working in the plugin directory itself, but
+they pass.
+
 
 Example
 =======
