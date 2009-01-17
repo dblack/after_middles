@@ -1,3 +1,19 @@
+
+
+
+THIS PLUGIN HAS BEEN SUPERSEDED
+
+by the per_action_mw (Per Action Middleware) plugin:
+
+git://github.com/dblack/per_action_mw.git
+
+Yes, it's all a moving target :-)
+
+
+David Black
+
+
+
 AfterMiddles
 ============
 
